@@ -72,5 +72,7 @@ public class ChessBoard implements IMovement {
         }
     }
 
-
+    public void moverPieza(){
+        pieceMoveInterface(lockers, 1, 1, 2, 3);
+    }
 }

@@ -1,13 +1,14 @@
 package com.company.movements;
 
+import com.company.model.Locker;
 import com.company.model.Piece;
 
 public interface IMovement {
 
     default void pieceMoveInterface(
-            Piece[][] pieces, int initialRow, int initialColumn, int finalRow, int finalColumn)
+            Locker[][] lockers, int initialRow, int initialColumn, int finalRow, int finalColumn)
     {
-        pieces[finalRow][finalColumn] = pieces[initialRow][initialColumn];
-        pieces[initialRow][initialColumn] = null;
+        lockers[finalRow][finalColumn].setPiece(lockers[initialRow][initialColumn].getPiece());
+        lockers[initialRow][initialColumn].setPiece(null);
     }
 }

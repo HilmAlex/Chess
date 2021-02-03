@@ -17,6 +17,7 @@ public abstract class Piece{
         return color;
     }
 
+    public abstract boolean checkMove();
     @Override
     public String toString() {
         return this.getClass().getSimpleName() +

@@ -8,8 +8,7 @@ public class main {
     public static void main(String[] args) {
         ChessBoard chessBoard = new ChessBoard();
 
-        Window window = new Window();
-        window.setVisible(true);
+        chessBoard.moverPieza();
 
     }
 }

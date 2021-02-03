@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6f9d93b-1502-498f-93ee-986374a9af50" name="Default Changelist" comment="" />
+    <list default="true" id="f6f9d93b-1502-498f-93ee-986374a9af50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/movements/IStraightDownMovement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/movements/IStraightSideMovement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/movements/IStraightUpMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/ChessBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/movements/IMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IStraightMovement.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -106,6 +118,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.main" />
@@ -130,7 +155,7 @@
       <workItem from="1612222159602" duration="111000" />
       <workItem from="1612223698921" duration="30000" />
       <workItem from="1612223742470" duration="7170000" />
-      <workItem from="1612285399507" duration="1870000" />
+      <workItem from="1612285399507" duration="4387000" />
     </task>
     <servers />
   </component>
@@ -148,75 +173,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1612296171682">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1612296171682" />
-    <state x="412" y="154" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1612298544106">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="412" y="154" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1612298544106" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612299933654">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1612299933654" />
-    <state width="410" height="461" key="DebuggerActiveHint" timestamp="1612297864228">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="410" height="461" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1612297864228" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1612299255242">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1612299255242" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1612302309061">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612302309061" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1612302309061">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1612302309061" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1612302309060">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1612302309060" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1612302309061">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1612302309061" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1612298036626">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1612298036626" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1612298036626">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1612298036626" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1612298036626">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1612298036626" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1612298036626">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1612298036626" />
-    <state x="163" y="0" key="SettingsEditor" timestamp="1612293792689">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1612293792689" />
-    <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1612297983226">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728@0.0.1366.728" timestamp="1612297983226" />
-    <state x="453" y="244" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1612299028492">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="453" y="244" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1366.728@0.0.1366.728" timestamp="1612299028492" />
-    <state x="526" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1612296361916">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="526" y="121" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1612296361916" />
   </component>
 </project>
