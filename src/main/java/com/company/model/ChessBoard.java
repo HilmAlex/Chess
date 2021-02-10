@@ -9,12 +9,13 @@ import java.util.List;
 public class ChessBoard implements IMovement {
     private String image = "C:\\Users\\Alex\\IdeaProjects\\Chess\\src\\main\\java\\images\\tablero.jpg";
     private Locker[][] lockers = new Locker[8][8];
+    private List<String> movementRecord = new ArrayList<>();
 
     public Locker[][] getLockers() {
         return lockers;
     }
 
-    public ChessBoard(int i){
+    public ChessBoard(int i) {
         startBoard();
     }
 
@@ -74,7 +75,7 @@ public class ChessBoard implements IMovement {
         lockers[row][column].setPiece(piece);
     }
 
-    public Piece getPiece(int row, int column){
+    public Piece getPiece(int row, int column) {
         return lockers[row][column].getPiece();
     }
 
@@ -94,39 +95,46 @@ public class ChessBoard implements IMovement {
     }
 
     public void movePiece(int initialRow, int initialColumn, int finalRow, int finalColumn) throws Exception {
-        PositionOnBoard initialPosition = new PositionOnBoard(initialRow, initialColumn);
-        PositionOnBoard finalPosition = new PositionOnBoard(finalRow, finalColumn);
+        PositionOnBoard initialPosition;
+        PositionOnBoard finalPosition;
+        Piece piece;
+
+        initialPosition = new PositionOnBoard(initialRow, initialColumn);
+        finalPosition = new PositionOnBoard(finalRow, finalColumn);
+        piece = lockers[initialRow][initialColumn].getPiece();
 
         if (checkPieceMove(initialPosition, finalPosition)) {
             lockers = pieceMoveInterface(lockers, initialPosition, finalPosition);
+            movementRecord.add(piece.getLastMovementRecord() + " ");
+            piece.setLastMovementRecord(movementRecord.size());
         } else {
             throw new Exception("Movimiento Ilegal");
         }
     }
 
     public boolean checkPieceMove(PositionOnBoard initialPosition, PositionOnBoard finalPosition) {
-        Locker initialLocker= lockers[initialPosition.getRow()][initialPosition.getColumn()];
-        Locker finalLocker = lockers[finalPosition.getRow()][finalPosition.getColumn()];
-        Piece pieceToMove = initialLocker.getPiece();
-        List<PositionOnBoard> possiblesMovements= pieceToMove.possibleMovements(lockers, initialLocker.getPosition());
+        Locker initialLocker;
+        Piece pieceToMove;
+        initialLocker = lockers[initialPosition.getRow()][initialPosition.getColumn()];
+        //Locker finalLocker = lockers[finalPosition.getRow()][finalPosition.getColumn()];
 
-        if (pieceToMove.checkMove(initialPosition, finalPosition)){
-            if(possiblesMovements.contains(finalLocker.getPosition())){
-                return true;
+        pieceToMove = initialLocker.getPiece();
+        pieceToMove.calculatePossibleMovements(lockers, initialPosition);
+        List<PositionOnBoard> possiblesMovements = pieceToMove.getPossibleMovements();
+
+        if (pieceToMove.checkMove(initialPosition, finalPosition)) {
+            //if (pieceToMove.getPossibleMovements().contains(finalPosition)) {
+            for (int i = 0; i <possiblesMovements.size() ; i++) {
+                if (possiblesMovements.get(i).getRow() == finalPosition.getRow()
+                && possiblesMovements.get(i).getColumn() == finalPosition.getColumn()){
+                    return true;
+                }
             }
         }
         return false;
     }
 
-    public void rotateMatrix() {
-        Locker[][] newLocker = lockers;
-        int k = 7;
-        int l = 7;
-        for (int i = 0; i < 8; i++) {
-            for (int j = 0; j < 8; j++) {
-                lockers[i][j] = newLocker[k][j--];
-            }
-            k--;
-        }
+    public Locker getLocker(PositionOnBoard positionOnBoard) {
+        return lockers[positionOnBoard.getRow()][positionOnBoard.getColumn()];
     }
 }

@@ -23,86 +23,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6f9d93b-1502-498f-93ee-986374a9af50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Bishop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/EmptyPiece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/King.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Knight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Pawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Queen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Rock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IDiagonalMovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IMovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IStraightSideMovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IStraightVerticalMovement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/Window.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/test.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/model/ChessBoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/model/PawnTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/movements/IStraightVerticalMovementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/api/ChessboardAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IHorizontalMovement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IVerticalMovement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/movements/IDiagonalMovementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/movements/IKnightMoveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chess.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess/Chess.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chessboard.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Bishop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/ChessBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/King.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Knight.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Locker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Pawn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Piece$typePiece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Piece.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Queen.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/model/Rock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/movements/IDiagonalMovement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/movements/IKnightMove.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/movements/IMovement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/movements/IStraightMovement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/utils/Settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/views/NewWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/com/company/views/Window.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/images/pieces.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/images/tablero.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Bishop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/ChessBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/King.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Knight.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Locker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Locker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Pawn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/PositionOnBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Queen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/model/Rock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IDiagonalMovement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IKnightMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IKnightMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IMovement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IStraightDownMovement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IStraightSideMovement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/movements/IStraightUpMovement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/utils/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/utils/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/views/NewWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/views/Window.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/views/Window.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/pieces.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/images/pieces.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/tablero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/images/tablero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/ChessBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/EmptyPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/EmptyPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Locker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Locker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/PositionOnBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/PositionOnBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Rock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/movements/IDiagonalMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IDiagonalMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/movements/IKnightMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IKnightMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/movements/IMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/movements/IStraightSideMovement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/movements/IStraightVerticalMovement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/model/PawnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/model/PawnTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/movements/IStraightVerticalMovementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/movements/IVerticalMovementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Bishop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/ChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/ChessBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/EmptyPiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/EmptyPiece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Locker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Locker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Pawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Piece$typePiece.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Piece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/PositionOnBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/PositionOnBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Queen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Rock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Rock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/movements/IDiagonalMovement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/movements/IDiagonalMovement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/movements/IKnightMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/movements/IKnightMove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/movements/IMovement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/movements/IMovement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/movements/IStraightSideMovement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/movements/IStraightVerticalMovement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/model/PawnTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/model/PawnTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/movements/IStraightVerticalMovementTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,10 +76,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit3 Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -146,7 +110,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AppListas" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -172,95 +136,93 @@
       <recent name="com.company.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PawnTest.move_pawn_F2_to_F4_and_F4_to_F6">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.IVerticalMovementTest.get_up_possibles_moves_black_rock_C3">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PawnTest.move_pawn_B2_to_B3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IKnightMoveTest.possibles_movements_G3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.model.*" />
+          <option name="PATTERN" value="com.company.movements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.model.PawnTest" />
-      <option name="METHOD_NAME" value="move_pawn_B2_to_B3" />
+      <option name="PACKAGE_NAME" value="com.company.movements" />
+      <option name="MAIN_CLASS_NAME" value="com.company.movements.IKnightMoveTest" />
+      <option name="METHOD_NAME" value="possibles_movements_G3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PawnTest.move_pawn_B2_to_B4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IKnightMoveTest.possibles_movements_H1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.model.*" />
+          <option name="PATTERN" value="com.company.movements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.model.PawnTest" />
-      <option name="METHOD_NAME" value="move_pawn_B2_to_B4" />
+      <option name="PACKAGE_NAME" value="com.company.movements" />
+      <option name="MAIN_CLASS_NAME" value="com.company.movements.IKnightMoveTest" />
+      <option name="METHOD_NAME" value="possibles_movements_H1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PawnTest.move_pawn_C2_to_B3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IKnightMoveTest.possibles_movements_H3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.model.*" />
+          <option name="PATTERN" value="com.company.movements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.model.PawnTest" />
-      <option name="METHOD_NAME" value="move_pawn_C2_to_B3" />
+      <option name="PACKAGE_NAME" value="com.company.movements" />
+      <option name="MAIN_CLASS_NAME" value="com.company.movements.IKnightMoveTest" />
+      <option name="METHOD_NAME" value="possibles_movements_H3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PawnTest.move_pawn_D2_to_D4_and_D4_to_D5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IVerticalMovementTest.get_up_possibles_moves_black_rock_A1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.model.*" />
+          <option name="PATTERN" value="com.company.movements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.model.PawnTest" />
-      <option name="METHOD_NAME" value="move_pawn_D2_to_D4_and_D4_to_D5" />
+      <option name="PACKAGE_NAME" value="com.company.movements" />
+      <option name="MAIN_CLASS_NAME" value="com.company.movements.IVerticalMovementTest" />
+      <option name="METHOD_NAME" value="get_up_possibles_moves_black_rock_A1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PawnTest.move_pawn_F2_to_F4_and_F4_to_F6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IVerticalMovementTest.get_up_possibles_moves_black_rock_C3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.model.*" />
+          <option name="PATTERN" value="com.company.movements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.company.model" />
-      <option name="MAIN_CLASS_NAME" value="com.company.model.PawnTest" />
-      <option name="METHOD_NAME" value="move_pawn_F2_to_F4_and_F4_to_F6" />
+      <option name="PACKAGE_NAME" value="com.company.movements" />
+      <option name="MAIN_CLASS_NAME" value="com.company.movements.IVerticalMovementTest" />
+      <option name="METHOD_NAME" value="get_up_possibles_moves_black_rock_C3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -268,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PawnTest.move_pawn_F2_to_F4_and_F4_to_F6" />
-        <item itemvalue="JUnit.PawnTest.move_pawn_D2_to_D4_and_D4_to_D5" />
-        <item itemvalue="JUnit.PawnTest.move_pawn_B2_to_B3" />
-        <item itemvalue="JUnit.PawnTest.move_pawn_B2_to_B4" />
-        <item itemvalue="JUnit.PawnTest.move_pawn_C2_to_B3" />
+        <item itemvalue="JUnit.IVerticalMovementTest.get_up_possibles_moves_black_rock_C3" />
+        <item itemvalue="JUnit.IVerticalMovementTest.get_up_possibles_moves_black_rock_A1" />
+        <item itemvalue="JUnit.IKnightMoveTest.possibles_movements_H1" />
+        <item itemvalue="JUnit.IKnightMoveTest.possibles_movements_H3" />
+        <item itemvalue="JUnit.IKnightMoveTest.possibles_movements_G3" />
       </list>
     </recent_temporary>
   </component>
@@ -299,8 +261,20 @@
       <workItem from="1612481181262" duration="3763000" />
       <workItem from="1612492075728" duration="8797000" />
       <workItem from="1612541717911" duration="17091000" />
-      <workItem from="1612713929017" duration="9769000" />
+      <workItem from="1612713929017" duration="13454000" />
+      <workItem from="1612803435252" duration="34430000" />
+      <workItem from="1612883887666" duration="32000" />
+      <workItem from="1612921226067" duration="330000" />
+      <workItem from="1612921598862" duration="639000" />
     </task>
+    <task id="LOCAL-00001" summary="Funcionamiento movimiento vertical">
+      <created>1612759289983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612759289983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,18 +292,32 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Funcionamiento movimiento vertical" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcionamiento movimiento vertical" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/company/movements/IStraightVerticalMovementTest.java</url>
-          <line>71</line>
-          <properties class="com.company.movements.IStraightVerticalMovementTest" method="get_down_possibles_moves_D4">
+          <url>file://$PROJECT_DIR$/src/test/java/com/company/movements/IVerticalMovementTest.java</url>
+          <line>73</line>
+          <properties class="com.company.movements.IVerticalMovementTest" method="get_down_possibles_moves_D4">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/company/movements/IKnightMove.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="finalPosition" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

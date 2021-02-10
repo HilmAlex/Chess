@@ -8,17 +8,22 @@ import java.util.List;
 public class Bishop extends Piece implements IDiagonalMovement {
     public Bishop(Color color) {
         super(color);
-        this.setImage(color.equals(Color.BLACK)? "src/main/java/images/blackBishop.png" : "src/main/java/images/whiteBishop.png");
+        setMaxDistance(7);
+        this.setImage(color.equals(Color.BLACK) ? "src/main/java/images/blackBishop.png" : "src/main/java/images/whiteBishop.png");
     }
 
-    private int maxDistance;
-    public List<PositionOnBoard> possibleMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
-        return null;
+    @Override
+    public void calculatePossibleMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
+        List<PositionOnBoard> possibleMovements;
+
+        possibleMovements = possibleDiagonalMovements(lockers, initialPosition);
+
+        this.setPossibleMovements(possibleMovements);
     }
 
     @Override
     public boolean checkMove(PositionOnBoard initialPosition, PositionOnBoard finalPosition) {
-        return false;
+        return checkDiagonalMove(initialPosition, finalPosition);
     }
 }
 

@@ -1,26 +1,32 @@
 package com.company.model;
 
-import com.company.movements.IStraightSideMovement;
-import com.company.movements.IStraightVerticalMovement;
+import com.company.movements.IHorizontalMovement;
+import com.company.movements.IVerticalMovement;
 
 import java.awt.*;
 import java.util.List;
 
-public class Rock extends Piece implements IStraightVerticalMovement, IStraightSideMovement {
+public class Rock extends Piece implements IVerticalMovement, IHorizontalMovement {
     public Rock(Color color) {
         super(color);
-        this.setMaxDistance(8);
+        this.setMaxDistance(7);
         this.setImage(color.equals(Color.BLACK)? "src/main/java/images/blackRock.png" : "src/main/java/images/whiteRock.png");
     }
 
     @Override
-    public List<PositionOnBoard> possibleMovements(Locker[][] lockers, PositionOnBoard initialPosition){
-        return null;
+    public void calculatePossibleMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
+        List<PositionOnBoard> possibleMovements;
+
+        possibleMovements = possibleVerticalMovements(lockers, initialPosition);
+        possibleMovements.addAll(possibleHorizontalMovements(lockers, initialPosition));
+
+        this.setPossibleMovements(possibleMovements);
     }
 
     @Override
     public boolean checkMove(PositionOnBoard initialPosition, PositionOnBoard finalPosition) {
-        return false;
+        return checkVerticalMove(initialPosition, finalPosition)
+                && checkHorizontalMovement(initialPosition, finalPosition);
     }
 
 }

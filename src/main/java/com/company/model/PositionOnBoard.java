@@ -1,5 +1,6 @@
 package com.company.model;
 
+import javax.swing.text.Position;
 import java.util.Objects;
 
 public class PositionOnBoard {
@@ -26,12 +27,6 @@ public class PositionOnBoard {
 
     public PositionOnBoard getPosition(){
         return this;
-    }
-
-    @Override
-    public String toString() {
-        return "row = " + row +
-                "column = " + column;
     }
 
     @Override

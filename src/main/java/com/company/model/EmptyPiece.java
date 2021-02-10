@@ -6,12 +6,11 @@ import java.util.List;
 public class EmptyPiece extends Piece{
     public EmptyPiece() {
         super(Color.cyan);
-        setMaxDistance(8);
+        setMaxDistance(1);
     }
 
     @Override
-    public List<PositionOnBoard> possibleMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
-        return null;
+    public void calculatePossibleMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
     }
 
     @Override

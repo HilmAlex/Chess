@@ -2,13 +2,17 @@ package com.company.movements;
 
 import com.company.model.Locker;
 import com.company.model.PositionOnBoard;
+import java.util.List;
 
-import java.awt.*;
-
-public interface IDiagonalMovement {
+/**
+ * Esta interfaz determina los movimientos diagonales posibles de una pieza de ajedrez
+ *      tomando en cuenta las limitaciones en cada pieza.
+ * @author Alex Padilla
+ */
+public interface IDiagonalMovement extends IMovement {
     /**
-     * Se verifica el movimiento diagonal utilizando la pendiente entre la posicion inicial
-     * y la posible posicion final, si es igual a 1, el movimiento es diagonal.
+     * Este método verifica si el movimiento es diagonal comparando la pendiente entre la posicion inicial
+     *      y la posible posicion final, si esta es igual a 1, entonces el movimiento es diagonal.
      */
     default boolean checkDiagonalMove(PositionOnBoard initialPosition, PositionOnBoard finalPosition) {
         if (Math.abs((finalPosition.getColumn() - initialPosition.getColumn())
@@ -17,43 +21,22 @@ public interface IDiagonalMovement {
         } else return false;
     }
 
-    default Locker[][] possibleDiagonalMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
-        Locker[][] movements = new Locker[8][8];
-        getDiagonalSquares(lockers, movements, initialPosition, (byte) 1, (byte) 1);
-        getDiagonalSquares(lockers, movements, initialPosition, (byte) 1, (byte) -1);
-        getDiagonalSquares(lockers, movements, initialPosition, (byte) -1, (byte) 1);
-        getDiagonalSquares(lockers, movements, initialPosition, (byte) -1, (byte) -1);
-        return movements;
-    }
-
     /**
-     * @param lockers           Casillas del tablero
-     * @param movements         Arreglo de movimientos posibles basados en las casillas
-     * @param initialPosition   Posicion Inicial de la casilla
-     * @param horizontalTowards Lado horizontal hacia el que extrae los movimientos posibles,
-     *                          "1" hacia la derecha y "-1" hacia la izquierda.
-     * @param verticalTowards   Lado vertical hacia el que extrae los movimientos posibles,
-     *                          1" hacia la arriba y "-1" hacia la abajo.
+     * Este metodo calcula los movimientos verticales posibles de una pieza de ajedrez, realiza un
+     *  cálculo de movimientos ascendentes y descendentes a través del método getSquares() de la interfaz
+     *  Imovement para luego unirlos en una sola lista.
+     * @param lockers Casillas del tablero de ajedrez
+     * @param initialPosition Posicion inicial de la pieza
+     * @return Lista de posiciones posibles
      */
-    private void getDiagonalSquares(Locker[][] lockers, Locker[][] movements,
-                                    PositionOnBoard initialPosition, byte horizontalTowards, byte verticalTowards) {
-        Color colorPieceInitial = lockers[initialPosition.getRow()][initialPosition.getColumn()].getColor();
-        int finalSquareBoard = horizontalTowards == 1 ? lockers.length - initialPosition.getRow() : initialPosition.getRow();
-        ;
-        for (int i = 1; i < finalSquareBoard + 1; i++) {
-
-            int finalRowLocker = initialPosition.getRow() + i * (horizontalTowards);
-            int finalColumnLocker = initialPosition.getColumn() + i * (verticalTowards);
-
-            movements[finalRowLocker][finalColumnLocker] = lockers[finalRowLocker][finalColumnLocker];
-
-            if (lockers[finalRowLocker][finalColumnLocker] != null) {
-                if (lockers[finalRowLocker][finalColumnLocker].getPiece().getColor().equals(colorPieceInitial)) {
-                    lockers[finalRowLocker][finalColumnLocker] = null;
-                }
-                break;
-            }
-        }
+    default List<PositionOnBoard> possibleDiagonalMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
+        List<PositionOnBoard> possiblesMovements;
+        possiblesMovements = getSquares(lockers, initialPosition, 1,1);
+        possiblesMovements.addAll(getSquares(lockers,initialPosition, 1,-1));
+        possiblesMovements.addAll(getSquares(lockers,initialPosition, -1,1));
+        possiblesMovements.addAll(getSquares(lockers,initialPosition, -1,-1));
+        return possiblesMovements;
     }
+
 }
 
