@@ -1,9 +1,11 @@
 package com.company.model;
 
+import lombok.Data;
+
 import java.awt.*;
 import java.util.List;
 
-public abstract class Piece {
+public @Data abstract class Piece {
 
     private int maxDistance;
     private final Color color;
@@ -22,49 +24,8 @@ public abstract class Piece {
 
     public abstract boolean checkMove(PositionOnBoard initialPosition, PositionOnBoard finalPosition);
 
-    // Getters and setters
-    public String getImage() {
-        return image;
-    }
-
-    public int getMaxDistance() {
-        return maxDistance;
-    }
-
-    public void setMaxDistance(int maxDistance) {
-        this.maxDistance = maxDistance;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public List<PositionOnBoard> getPossibleMovements() {
-        return possibleMovements;
-    }
-
-    public void setPossibleMovements(List<PositionOnBoard> possibleMovements) {
-        this.possibleMovements = possibleMovements;
-    }
-
-    public int getQuantityOfMovements() {
-        return quantityOfMovements;
-    }
-
     public void increaseMovement() {
         this.quantityOfMovements++;
-    }
-
-    public int getLastMovementRecord() {
-        return lastMovementRecord;
-    }
-
-    public void setLastMovementRecord(int lastMovementRecord) {
-        this.lastMovementRecord = lastMovementRecord;
     }
 
     @Override

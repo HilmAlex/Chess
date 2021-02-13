@@ -37,8 +37,6 @@ public class IKnightMoveTest implements IKnightMove {
 
     @Test
     public void possibles_movements_H1() {
-        chessBoard.getPiece(0,7).setMaxDistance(1);
-        chessBoard.setPiece(1,5, new EmptyPiece());
         possiblesMovements = possibleKnightMovements(chessBoard.getLockers(), new PositionOnBoard(0, 7));
     }
 }

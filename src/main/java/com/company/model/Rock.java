@@ -10,7 +10,7 @@ public class Rock extends Piece implements IVerticalMovement, IHorizontalMovemen
     public Rock(Color color) {
         super(color);
         this.setMaxDistance(7);
-        this.setImage(color.equals(Color.BLACK)? "src/main/java/images/blackRock.png" : "src/main/java/images/whiteRock.png");
+        this.setImage(color.equals(Color.BLACK)? "C:\\Users\\Alex\\IdeaProjects\\Chess\\src\\main\\java\\images\\blackRock.png" : "C:\\Users\\Alex\\IdeaProjects\\Chess\\src\\main\\java\\images\\whiteRock.png");
     }
 
     @Override

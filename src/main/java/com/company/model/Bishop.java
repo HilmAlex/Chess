@@ -9,7 +9,7 @@ public class Bishop extends Piece implements IDiagonalMovement {
     public Bishop(Color color) {
         super(color);
         setMaxDistance(7);
-        this.setImage(color.equals(Color.BLACK) ? "src/main/java/images/blackBishop.png" : "src/main/java/images/whiteBishop.png");
+        this.setImage(color.equals(Color.BLACK) ? "C:\\Users\\Alex\\IdeaProjects\\Chess\\src\\main\\java\\images\\blackBishop.png" : "C:\\Users\\Alex\\IdeaProjects\\Chess\\src\\main\\java\\images\\whiteBishop.png");
     }
 
     @Override

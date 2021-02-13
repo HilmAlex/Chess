@@ -1,4 +1,7 @@
 package com.company.model;
 
-public class Player {
+import lombok.Data;
+
+public @Data class Player {
+
 }

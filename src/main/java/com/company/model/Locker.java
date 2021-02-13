@@ -1,54 +1,27 @@
 package com.company.model;
 
-import java.awt.*;
-import java.util.Objects;
+import lombok.Data;
 
-public class Locker extends PositionOnBoard {
+import java.awt.*;
+
+public @Data class Locker{
+    private PositionOnBoard position;
     private Color color;
     private Piece piece;
 
     public Locker(Color color, int row, int column) {
-        super(row, column);
+        this.position=new PositionOnBoard(row, column);
         this.color = color;
         this.piece = null;
 
     }
 
     public Locker(int row, int column) {
-        super(row, column);
-    }
-
-    public Piece getPiece() {
-        return piece;
-    }
-
-    public void setPiece(Piece piece) {
-        this.piece = piece;
-    }
-
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
+        this.position=new PositionOnBoard(row, column);;
     }
 
     @Override
     public String toString() {
-        return getRow() + " " + getColumn();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Locker locker = (Locker) o;
-        return Objects.equals(color, locker.color) && Objects.equals(piece, locker.piece);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(color, piece);
+        return position.getRow() + " " + position.getColumn();
     }
 }

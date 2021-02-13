@@ -1,9 +1,11 @@
 package com.company.model;
 
+import lombok.Data;
+
 import javax.swing.text.Position;
 import java.util.Objects;
 
-public class PositionOnBoard {
+public @Data class PositionOnBoard {
     private int row;
     private int column;
 
@@ -17,28 +19,8 @@ public class PositionOnBoard {
         this.column = positionOnBoard.getColumn();
     }
 
-    public int getRow() {
-        return row;
-    }
-
-    public int getColumn() {
-        return column;
-    }
-
     public PositionOnBoard getPosition(){
         return this;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        PositionOnBoard that = (PositionOnBoard) o;
-        return row == that.row && column == that.column;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(row, column);
-    }
 }

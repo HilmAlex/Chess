@@ -1,23 +1,16 @@
 package com.company.model;
 
 import com.company.movements.IMovement;
+import lombok.Data;
 
 import java.awt.*;
 import java.util.*;
 import java.util.List;
 
-public class ChessBoard implements IMovement {
+public @Data class ChessBoard implements IMovement {
     private String image = "C:\\Users\\Alex\\IdeaProjects\\Chess\\src\\main\\java\\images\\tablero.jpg";
     private Locker[][] lockers = new Locker[8][8];
     private List<String> movementRecord = new ArrayList<>();
-
-    public Locker[][] getLockers() {
-        return lockers;
-    }
-
-    public ChessBoard(int i) {
-        startBoard();
-    }
 
     public ChessBoard() {
         startBoard();
@@ -71,14 +64,6 @@ public class ChessBoard implements IMovement {
 
     }
 
-    public void setPiece(int row, int column, Piece piece) {
-        lockers[row][column].setPiece(piece);
-    }
-
-    public Piece getPiece(int row, int column) {
-        return lockers[row][column].getPiece();
-    }
-
     public void imprimirCasilla() {
         Optional<Locker> locker;
         for (int i = 0; i < 8; i++) {
@@ -116,7 +101,6 @@ public class ChessBoard implements IMovement {
         Locker initialLocker;
         Piece pieceToMove;
         initialLocker = lockers[initialPosition.getRow()][initialPosition.getColumn()];
-        //Locker finalLocker = lockers[finalPosition.getRow()][finalPosition.getColumn()];
 
         pieceToMove = initialLocker.getPiece();
         pieceToMove.calculatePossibleMovements(lockers, initialPosition);
@@ -132,9 +116,5 @@ public class ChessBoard implements IMovement {
             }
         }
         return false;
-    }
-
-    public Locker getLocker(PositionOnBoard positionOnBoard) {
-        return lockers[positionOnBoard.getRow()][positionOnBoard.getColumn()];
     }
 }

@@ -38,7 +38,7 @@ public class PawnTest implements IMovement {
         chessBoard.movePiece(1,7,3,7);
         chessBoard.movePiece(3,7,4,7);
     }
-//Movimientos hacia atrás
+    //Movimientos hacia atrás
     @Test(expected = Exception.class)
     public void move_pawn_D5_to_D4() throws Exception {
         chessBoard.movePiece(1,3,3,3);

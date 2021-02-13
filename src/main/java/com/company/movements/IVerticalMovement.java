@@ -37,6 +37,7 @@ public interface IVerticalMovement extends IMovement{
      */
     default List<PositionOnBoard> possibleVerticalMovements(Locker[][] lockers, PositionOnBoard initialPosition) {
         List<PositionOnBoard> possiblesMovements;
+
         possiblesMovements = getSquares(lockers, initialPosition, 1,0);
         possiblesMovements.addAll(getSquares(lockers,initialPosition, -1,0));
         return possiblesMovements;
