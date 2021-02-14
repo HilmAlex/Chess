@@ -23,40 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6f9d93b-1502-498f-93ee-986374a9af50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/BishopView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/ChessboardView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/KingView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/KnightView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/LockerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/PawnView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/PieceView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/QueenView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/views/RockView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/model/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chess.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/ChessBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Locker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Locker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/PositionOnBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/PositionOnBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/movements/IVerticalMovement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/movements/IVerticalMovement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/views/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/views/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/model/PawnTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/model/PawnTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/movements/IKnightMoveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/movements/IKnightMoveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Bishop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/ChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/ChessBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Locker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Locker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Piece.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Piece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/model/PositionOnBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/model/PositionOnBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/views/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/views/Window.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +78,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -136,6 +104,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -308,6 +289,9 @@
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="finalPosition" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="((JLayeredPane)((Window)this).panel1).component" custom="com.company.views.Window,javax.swing.JLayeredPane" />
       </configuration>
     </watches-manager>
   </component>
